@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin-bottom: 0 !important;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+.navbar{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+
+}
+
+.kz-logo{
+	height: 80px;
+	width: auto;
+}
+
+.kz-bg-transparent{
+	background: transparent;
+}
+
+.kz-nav-list{
+	list-style: none;
+}
+
+.kz-nav-list li{
+	display: inline-block;
+	margin-left: 32px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.6px;
+
+	transition: 0.2s;
+}
+
+.kz-nav-list li:hover{
+	color: #bcd0c7;
+}
+
+.carousel{
+	position: relative;
+	z-index: -1;
+}
+
+.kz-gradient{
+	background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+
+.kz-hero-text{
+	position: absolute;
+	color: white;
+	width: 50%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.kz-hero-text .title{
+	font-size: 4rem;
+	letter-spacing: 1.1px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+}
+
+
+.kz-hero-text .tagline{
+	font-size: 1.6rem;
+	letter-spacing: 1.3px;
+	font-weight: 400;
+	margin-top: -4px;
+	color: #eaebed;
+	opacity: 0.6;
+
+}
