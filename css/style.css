@@ -92,3 +92,23 @@ body{
 	opacity: 0.6;
 
 }
+
+
+/* ====================== */
+/*   Section 1: Vision    */
+/* ====================== */
+
+.kz-section-vision{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.kz-section-vision h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.kz-section-vision p{
+	font-size: 1.1rem;
+}
