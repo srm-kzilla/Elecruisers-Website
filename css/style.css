@@ -7,9 +7,26 @@ p{
 	margin-bottom: 0 !important;
 }
 
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 24px;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+}
+
 body{
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+}
+
+.kz-section{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.kz-section-text{
+	font-size: 1.1rem;
 }
 
 .navbar{
@@ -94,21 +111,48 @@ body{
 }
 
 
+
+
 /* ====================== */
 /*   Section 1: Vision    */
 /* ====================== */
 
-.kz-section-vision{
-	padding-top: 64px;
-	padding-bottom: 64px;
+
+
+/* ========================== */
+/*   Section 2: Department    */
+/* ========================== */
+
+.kz-section-dept{
+	background:  linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('../assets/img/1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
 }
 
-.kz-section-vision h2{
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 24px;
+.kz-section-dept .kz-section-text{
+	color: #bcd0c7;
 }
 
-.kz-section-vision p{
-	font-size: 1.1rem;
+/* ========================== */
+/*   Section 3: Event    */
+/* ========================== */
+
+.kz-section-event{
+	background:  linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('../assets/img/2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
 }
+
+.kz-section-event .kz-section-text{
+	color: #bcd0c7;
+}
+
+.kz-section-event h2{
+	text-transform: none;
+}
+
+
+
+
