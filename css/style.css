@@ -155,4 +155,57 @@ body{
 
 
 
+/* ========================== */
+/*   Section 5: Forms    */
+/* ========================== */
 
+.kz-form-wrapper{
+	position: relative;
+	background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("../assets/img/bgform.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+}
+.kz-form-bgicon{
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	z-index: -1;
+}
+.kz-form-bgicon img{
+	height: 300px;
+	width: 300px;
+}
+@media (max-width:500px){
+	.kz-form-bgicon{
+		position: absolute;
+		top: 35%;
+		left: 15%;
+		z-index: -1;
+	}
+	.kz-form-bgicon img{
+		height: 250px;
+		width: 250px;
+	}
+}
+.kz-rotate {
+	animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+  .form-group label{
+	  color: white !important;
+  }
+  #map {
+	height: 400px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+	background-color:transparent;
+   }
