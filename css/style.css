@@ -204,7 +204,7 @@ body{
   
   @keyframes rotation {
 	from {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	to {
 	  transform: rotate(359deg);
@@ -264,14 +264,12 @@ body{
 		  padding: 5px;
 		  font-size: 15px;
 	  }
-  }
-
-
-
-
-
-
-
+	}
+	
+/* Cars descrtipion section */
+.kz-car-description {
+	color: white;
+}
 /* Footer */
 section {
     padding: 60px 0;
@@ -346,3 +344,57 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
+.kz-car {
+	position: relative;
+	background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("../assets/img/carhero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.kz-car img{
+ max-height: 340px;
+ width: 100%;
+ object-fit: cover;
+
+}
+
+.kz-car a {
+	background-color: black;
+	color: white;
+	border-radius: 12px;
+}
+
+.kz-car a:hover {
+	text-decoration: none;
+}
+
+.kz-car a span{
+	transition: 0.2s;
+	display: block;
+}
+
+.kz-car a span:hover{
+	transform: scale(1.1);
+}
+
+.kz-car-alt{
+	flex-direction: row-reverse;
+}
+
+/* ================ */
+/* EVENTS */
+/* ================ */
+.kz-events-hero{
+	height: 80vh;
+	background-color: black;
+}
+
+.kz-events-hero p{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 2.5rem;
+	padding-left: 25%;
+	color: white;
+	letter-spacing: 0.5px;
+}
+
