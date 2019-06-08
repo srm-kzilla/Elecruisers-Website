@@ -21,7 +21,7 @@ body{
 	
 }
 
-@media(max-width:500px){
+@media(max-width:576px){
 	body{
 		overflow-x: hidden;
 	}
@@ -56,7 +56,14 @@ body{
 .kz-bg-transparent{
 	background: transparent;
 }
-
+@media (max-width: 576px){
+	.kz-section-hero{
+		margin-top: 120px;
+	}
+	.kz-bg-transparent{
+		background-color: #212529;
+	}
+}
 .kz-nav-list{
 	list-style: none;
 }
@@ -120,12 +127,90 @@ body{
 
 }
 
+@media (max-width: 576px) {
+	.kz-hero-text{
+		position: absolute;
+		text-align: center;
+		color: white;
+		width: 50%;
+		text-align: center;
+		top: 30%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+	}
+
+	.kz-hero-text .title{
+		font-size: 1.8rem;
+		letter-spacing: 0.5px;
+		font-weight: 600;
+		text-transform: uppercase;
+	
+	}
+	
+  .kz-hero-text .tagline{
+		font-size: 0.8rem;
+		letter-spacing: 0.7px;
+		font-weight: 400;
+		margin-top: -4px;
+		color: #eaebed;
+		opacity: 0.6;
+	
+	}
+}
+
 
 
 
 /* ====================== */
 /*   Section 1: Vision    */
 /* ====================== */
+
+
+
+/* ========================== */
+/*   Section 2: Sponsers    */
+/* ========================== */
+.kz-section-sponsors{
+	display: block !important;
+}
+.msponsor{
+	display: none !important;
+}
+.mrow{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	left: 0%;
+	transform: translate(0%,-50%);
+	margin-bottom: 20px;
+	animation-name: mymarquee;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	overflow: hidden;
+}
+@keyframes mymarquee{
+	from{transform: translateX(100%);}
+  to{transform: translateX(-100%);}
+}
+.spimg{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.ospimg{
+	padding: 10px;
+}
+@media (max-width:576px){
+	.kz-section-sponsors {
+		display: none !important;
+	}
+	.msponsor{
+		display: block !important;
+		position: relative;
+	}
+}
+
 
 
 
@@ -261,8 +346,8 @@ body{
 
   @media (max-width:500px){
 	  .kz-social-icons a{
-		  padding: 5px;
-		  font-size: 15px;
+		  padding: 10px;
+		  font-size: 20px;
 	  }
 	}
 
