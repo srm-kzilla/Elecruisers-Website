@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>
+
+    </title>
+</head>
+<body>
+    <div class="team-page">
+        <div class="main-header">
+            <h1>Meet our <span>Team</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam pariatur vel quo voluptatum? Fuga commodi molestiae, nobis quae dolores reiciendis quidem sit accusamus officia corrupti, necessitatibus ut, non incidunt asperiores.
+                    Fuga commodi molestiae, nobis quae dolores reiciendis quidem sit accusamus officia corrupti, necessitatibus ut.
+            </p>
+        </div>
+        <div class="team-profile">
+            <div class="first-row">
+                <div id="img" class="img1">
+                    <img id="image" src = "sample.png">
+                    <p id="hover-text">John Doe<br>Associate Lead<br>Technical</p>
+                </div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+            </div>  
+            <div class="second-row">
+                    <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                </div>   
+                <div class="second-row">
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                        <div id="img" class="img1"><img id="image" src = "sample.png"></div>
+                    </div>   
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+       
+        $(document).ready(function () {
+        
+            $("#img").hover( function () {
+              
+                $("#image").css('filter','brightness(0.4)');
+                $("#hover-text").show();
+                            
+            },
+                function () {
+                    $("#image").css('filter','brightness(1)');
+                    $("#hover-text").hide();
+        });
+
+    });
+  
+    </script>
+</body>

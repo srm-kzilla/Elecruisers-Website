@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'brandon-grotesque'; 
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 100;
+}
+span{
+    font-weight: bold;
+}
+.main-header p{
+    text-align: center;
+    padding: 40px 200px;
+
+}
+.first-row{
+    display: grid;
+    margin: 30px 200px ;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    
+}
+.second-row{
+    display: grid;
+    margin: 30px 200px ;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+}
+
+.team-profile img{
+    position: relative;
+    z-index: -1;
+    height: 100px;
+    width: 100px;
+    
+}
+#hover-text{
+    display: none;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 12px;
+}
+
+.img1:hover{
+    filter: grayscale(100%);
+
+}
