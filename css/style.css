@@ -425,43 +425,6 @@ section .section-title {
     margin-bottom: 10px;
 }
 }
-.kz-car {
-	position: relative;
-	background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url("../assets/img/carhero.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-.kz-car img{
- max-height: 340px;
- width: 100%;
- object-fit: cover;
-
-}
-
-.kz-car a {
-	background-color: black;
-	color: white;
-	border-radius: 12px;
-}
-
-.kz-car a:hover {
-	text-decoration: none;
-}
-
-.kz-car a span{
-	transition: 0.2s;
-	display: block;
-}
-
-.kz-car a span:hover{
-	transform: scale(1.1);
-}
-
-.kz-car-alt{
-	flex-direction: row-reverse;
-}
 
 /* ================ */
 /* EVENTS */
@@ -479,3 +442,128 @@ section .section-title {
 	letter-spacing: 0.5px;
 }
 
+/* =============================================== */
+/* Styling for cars.html begins here */
+/* =============================================== */
+.car-outer{
+	position: relative;
+	height: 100vh;
+	display: flex;
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 5px 10px 18px #888888;
+}
+.car-left{
+	position: relative;
+	padding: 0px;
+	height: 100vh;
+	width: 50%;
+	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.car-right{
+	position: relative;
+	padding: 0px;
+	height: 100vh;
+	width: 50%;
+	overflow: hidden;
+	background-color: #296DE0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.car-photo img{
+	position: absolute;
+	z-index: 1070;
+	height: 50%;
+	width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.circle-left{
+	overflow: hidden;
+	position: absolute;
+	right: 0%;	
+	top: 50%;
+	transform: translate(50%,-50%);
+	background-color: #EED655;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.car-left a:link{
+	color: #296DE0;
+}
+.car-left a:hover{
+	color: #000;
+}
+.car-left a:active{
+	color: #296DE0;
+}
+.car-left a:visited{
+	color: #296DE0;
+}
+.circle-right{
+	overflow: hidden;
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.car-left-icon img{
+	padding: 20px;
+	height: 100px;
+	width: 100px;
+}
+.car-left-title h1{
+	padding: 50px;
+	font-size: 50px !important;
+	font-weight: 600;
+}
+.specs{
+	padding: 20px;
+	padding-left: 50px;
+}
+.specs ul{
+	list-style: none;
+}
+.specs h6{
+	color: #116B80;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 500;
+}
+.specs h3{
+	color: #EED655;
+	font-size: 22px;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+.car-left-footer{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	height: 10vh;
+	background-color: #F1F1F1;
+	width: 100%;
+}
+.car-left-footer p{
+	color: #296DE0;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+.car-left-footer i{
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #296DE0;
+}
