@@ -25,7 +25,7 @@
             </p>
         </div>
         <div class="team-profile">
-            <div class="first-row row">
+            <div class="row">
                 <div class="wrapper">
                     <img class="target" src="assets/img/team/Aditya Baburajan.jpg">
                     <div class="hover-animation">
@@ -81,22 +81,7 @@
 
                     </div>
                 </div>
-                <div class="wrapper">
-                    <img class="target" src="assets/img/team/Sudhanshu Saxena.jpg">
-                    <div class="hover-animation">
-                        <p>Sudhanshu<br>Saxena<br> </p>
-                        <a href="https://www.linkedin.com/in/sudhanshu-saxena-8a2105188" class="fab fa-linkedin-in"
-                            target="_blank"></a>
-                        <a href="https://www.instagram.com/instagramsudhanshu__saxena/" class="fab fa-instagram"
-                            target="_blank"></a>
-                        <a href="https://www.facebook.com/profile.php?id=100006665505090" class="fab fa-facebook-f"
-                            target="_blank"></a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="second-row row">
-
+               
                 <div class="wrapper">
                     <img class="target" src="assets/img/team/Devansh Moduga.jpg">
                     <div class="hover-animation">
@@ -155,19 +140,9 @@
 
                     </div>
                 </div>
-                <div class="wrapper">
-                    <img class="target" src="assets/img/team/Isha Naik.jpg">
-                    <div class="hover-animation">
-                        <p>Isha<br> Naik</p>
-                        <a href="https://www.linkedin.com/in/isha-naik/" class="fab fa-linkedin-in" target="_blank"></a>
-                        <a href="https://www.instagram.com/isha__n_/?hl=en" class="fab fa-instagram"
-                            target="_blank"></a>
-                        <a href="https://www.facebook.com/isha.naik.31" class="fab fa-facebook-f" target="_blank"></a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="third-row row">
+                
+           
+            
                 <div class="wrapper">
                     <img class="target" src="assets/img/team/Vishal Singh.jpg">
                     <div class="hover-animation">
@@ -217,6 +192,7 @@
 
                     </div>
                 </div>
+                
                 <div class="wrapper">
                     <img class="target" src="assets/img/team/akamal.jpg">
                     <div class="hover-animation">
@@ -229,35 +205,62 @@
 
                     </div>
                 </div>
-                <div class="wrapper">
-                    <img class="target" src="assets/img/team/DILESWAR RAO.jpg">
-                    <div class="hover-animation">
-                        <p>T Dileswar<br> Rao</p>
-                        <a href="#" class="fab fa-linkedin-in"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="https://www.facebook.com/dillu.rao.3" class="fab fa-facebook-f" target="_blank"></a>
-
+                
+               
+                    <div class="wrapper">
+                        <img class="target" src="assets/img/team/Sudhanshu Saxena.jpg">
+                        <div class="hover-animation">
+                            <p>Sudhanshu<br>Saxena<br> </p>
+                            <a href="https://www.linkedin.com/in/sudhanshu-saxena-8a2105188" class="fab fa-linkedin-in"
+                                target="_blank"></a>
+                            <a href="https://www.instagram.com/instagramsudhanshu__saxena/" class="fab fa-instagram"
+                                target="_blank"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100006665505090" class="fab fa-facebook-f"
+                                target="_blank"></a>
+    
+                        </div>
                     </div>
-                </div>
-            </div>
-
+                    <div class="wrapper">
+                        <img class="target" src="assets/img/team/Isha Naik.jpg">
+                        <div class="hover-animation">
+                            <p>Isha<br> Naik</p>
+                            <a href="https://www.linkedin.com/in/isha-naik/" class="fab fa-linkedin-in" target="_blank"></a>
+                            <a href="https://www.instagram.com/isha__n_/?hl=en" class="fab fa-instagram"
+                                target="_blank"></a>
+                            <a href="https://www.facebook.com/isha.naik.31" class="fab fa-facebook-f" target="_blank"></a>
+    
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img class="target" src="assets/img/team/DILESWAR RAO.jpg">
+                        <div class="hover-animation">
+                            <p>T Dileswar<br> Rao</p>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="https://www.facebook.com/dillu.rao.3" class="fab fa-facebook-f" target="_blank"></a>
+    
+                        </div>
+                    
+               
         </div>
 
         <script type="text/javascript">
 
             $(document).ready(function () {
+                var viewportWidth = $(window).width();
+                 if (viewportWidth > 600) {
+                         $(".wrapper").hover(function (e) {
+                   
+                        $(this).find(".target").css('filter', 'brightness(0.4)');
+                        $(this).find(".hover-animation").show();
+                        
 
-                $(".wrapper").hover(function (e) {
-
-                    $(this).find(".target").css('filter', 'brightness(0.4)');
-                    $(this).find(".hover-animation").show();
-
-
-                },
-                    function () {
-                        $(this).find(".target").css('filter', 'brightness(1)');
-                        $(this).find(".hover-animation").hide();
-                    });
+                    },
+                        function () {
+                            $(this).find(".target").css('filter', 'brightness(1)');
+                            $(this).find(".hover-animation").hide();
+                        });
+                }
 
             });
 

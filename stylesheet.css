@@ -21,18 +21,19 @@ span{
 .row{
     display: grid;
     margin: 30px 200px ;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-column-gap: 1em;
     grid-row-gap: 2em;
     text-align: center;
     
 }
+
 .team-profile img{
     position: relative;
     z-index: -1;
-    height: 100px;
+    height: 120px;
     border-radius: 50%;
-    width: 100px;
+    width: 130px;
     vertical-align:middle;
     
 }
@@ -44,7 +45,7 @@ span{
     text-align: center;
     color: white;
     position: absolute;
-    left: 30%;
+    left: 32%;
     top: 28%;
     font-size: 15px;
 }
@@ -72,11 +73,10 @@ span{
        }
        .row{
             display: grid;
-            margin: 5px 80px ;
-            padding: 10px;
+            margin: 80px 80px ;
             grid-template-columns: repeat(3,1fr);
             grid-column-gap: 0.8em;
-            grid-row-gap: 1em;
+            grid-row-gap: 5em;
             text-align: center;
         }
         .main-header p{
@@ -89,15 +89,22 @@ span{
             width: 80px;
         }
         .fab{
-            font-size: 12px;
-            padding: 3px 3px;
+            font-size: 14px;
+            padding: 6px 3px;
+            color: #000000;
          }
         .hover-animation{
-           
+            color: #000000;
+            display: block;
             position: absolute;
-            left: 20%;
-            top: 26%;
-            font-size: 13px;
+            left: 22%;
+            top: 110%;
+            font-size: 14px;
+            
         }
+        .wrapper:hover{
+            filter: none;
+        }
+       
     }
   
