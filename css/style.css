@@ -446,6 +446,7 @@ section .section-title {
 /* Styling for cars.html begins here */
 /* =============================================== */
 .car-outer{
+	margin-top: 100px;
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -523,12 +524,13 @@ section .section-title {
 }
 .car-left-title h1{
 	padding: 50px;
-	font-size: 50px !important;
+	padding-bottom: 10px;
+	font-size: 50px;
 	font-weight: 600;
 }
 .specs{
-	padding: 20px;
 	padding-left: 50px;
+	margin-bottom: 10px;
 }
 .specs ul{
 	list-style: none;
@@ -566,4 +568,94 @@ section .section-title {
 	top: 50%;
 	transform: translateY(-50%);
 	color: #296DE0;
+}
+@media(max-width:576px){
+	.car-outer{
+		margin: 20px;
+		height: 60vh;
+	}
+	.car-left{
+		height: 60vh;
+	}
+	.car-right{
+		height: 60vh;
+	}
+	.circle-left , .circle-right{
+		height: 100px;
+		width: 100px;
+	}
+	.car-photo img{
+		height: 40%;
+		width: 50%;
+	}
+	.car-left-icon img{
+		height: 70px;
+		width: 70px;
+	}
+	.car-left-title h1{
+		padding: 10px;
+		font-size: 22px;
+	}
+	.specs{
+		padding: 5px;
+		padding-left: 10px;
+	}
+	.specs h6{
+		font-size: 10px;
+	}
+	.specs h3{
+		font-size: 12px;
+	}
+	.car-left-footer{
+		height: 5vh;
+	}
+	.car-left-footer p{
+		font-size: 12px;
+		padding: 5px;
+	}
+}
+@media only screen and (min-width:577px) and (max-width: 1120px){
+	.car-outer{
+		margin: 20px;
+		height: 60vh;
+	}
+	.car-left{
+		height: 60vh;
+	}
+	.car-right{
+		height: 60vh;
+	}
+	.circle-left , .circle-right{
+		height: 100px;
+		width: 100px;
+	}
+	.car-photo img{
+		height: 40%;
+		width: 50%;
+	}
+	.car-left-icon img{
+		height: 70px;
+		width: 70px;
+	}
+	.car-left-title h1{
+		padding: 10px;
+		font-size: 22px;
+	}
+	.specs{
+		padding: 0px;
+		padding-left: 10px;
+	}
+	.specs h6{
+		font-size: 8px;
+	}
+	.specs h3{
+		font-size: 12px;
+	}
+	.car-left-footer{
+		height: 5vh;
+	}
+	.car-left-footer p{
+		font-size: 12px;
+		padding: 5px;
+	}
 }
